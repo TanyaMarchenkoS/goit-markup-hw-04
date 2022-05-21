@@ -122,7 +122,10 @@ ul {
 .contact-link-mailto:focus {
   color: var(--accent-color);
 }
-
+.contact-link-tel:hover,
+.contact-link-tel:focus {
+  color: var(--accent-color);
+}
 .contact-link-mailto,
 .contact-link-tel {
   font-weight: 500;
@@ -187,6 +190,20 @@ ul {
 .specifics-list {
   display: flex;
 }
+
+.specific-link {
+  display: flex;
+  align-items: center;
+  justify-content: center;
+
+  width: 270px;
+  min-height: 120px;
+
+  background: #f5f4fa;
+  border-radius: 4px;
+  margin-bottom: 30px;
+}
+
 .specific-item {
   width: 270px;
   margin-right: 30px;
@@ -308,8 +325,50 @@ ul {
 }
 .socials-icon {
   fill: #afb1b8;
-  box-shadow: 0px 4px 4px rgba(0, 0, 0, 0.25);
 }
+
+/* Постоянные клиенты */
+.clients-title {
+  font-weight: 700;
+  font-size: 36px;
+  line-height: 1.17;
+  letter-spacing: 0.03em;
+  margin-bottom: 50px;
+  text-align: center;
+  letter-spacing: 0.03em;
+  color: #212121;
+}
+.clients {
+  display: flex;
+  align-items: center;
+  justify-content: center;
+}
+.clients-item:not(:last-child) {
+  margin-right: 30px;
+}
+.clients-link {
+  display: flex;
+  align-items: center;
+  justify-content: center;
+
+  width: 170px;
+  min-height: 92px;
+
+  border: 1px solid #afb1b8;
+  border-radius: 4px;
+}
+.clients-icon {
+  fill: #afb1b8;
+}
+
+.clients-link:hover {
+  border: 1px solid #2196f3;
+}
+
+.clients-link:hover .clients-icon {
+  fill: #2196f3;
+}
+
 /* Подвал */
 .footer {
   background-color: #2f303a;
@@ -361,6 +420,50 @@ ul {
   text-decoration: none;
   font-style: normal;
 }
+.footer > .container {
+  display: flex;
+  align-items:baseline
+}
+.container-icon {
+  padding-left: 70px;
+}
+/* Соц. сети icons Footer  */
+.footer-title {
+  font-weight: 700;
+  font-size: 14px;
+  line-height: 16px;
+  letter-spacing: 0.03em;
+  text-transform: uppercase;
+  color: #ffffff;
+  padding-bottom: 20px;
+}
+.footer-icons {
+  display: flex;
+  align-items: center;
+}
+.socials-links {
+  display: flex;
+  align-items: center;
+  justify-content: center;
+
+  width: 44px;
+  height: 44px;
+
+  background-color: rgba(255, 255, 255, 0.1);
+
+  border-radius: 50%;
+}
+.socials-links:hover,
+.socials-links:focus {
+  background-color: #2196f3;
+}
+
+.list-icon:not(:last-child) {
+  margin-right: 10px;
+}
+.socials-icons {
+  fill: #ffffff;
+}
 
 /* Main portfolio */
 .section .list-portfolio {
@@ -398,6 +501,9 @@ ul {
 .btn-portfolio:focus {
   color: #ffffff;
   background-color: var(--accent-color);
+  box-shadow: 0px 3px 1px rgba(0, 0, 0, 0.1), 0px 1px 2px rgba(0, 0, 0, 0.08),
+    0px 2px 2px rgba(0, 0, 0, 0.12);
+  border-radius: 4px;
 }
 
 .portfolio-title {
