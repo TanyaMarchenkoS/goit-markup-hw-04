@@ -363,11 +363,7 @@ ul {
   fill: #afb1b8;
 }
 
-.clients .clients-item:hover,
-.clients .clients-item:focus {
-  border: 1px solid #2196f3;
-  fill: #2196f3;
-}
+
 
 .clients-link:hover,
 .clients-link:focus {
